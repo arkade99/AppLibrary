@@ -6,6 +6,8 @@ import { Form } from "./Form";
 import { FormYup } from "./Form/FormYup";
 import { ReducerHookUseApp } from "./ReducerHookUseApp";
 import { CustomHookUseAPP } from "./CustomHookUseAPP";
+import { PracticeApp } from "./PracticeApp";
+import { InfiniteScroll } from "./InfiniteScroll";
 
 const Layout = () => {
   return (
@@ -17,6 +19,8 @@ const Layout = () => {
         <Route path="/formyup" element={<FormYup />} />
         <Route path="/reducerHookUseApp" element={<ReducerHookUseApp />} />
         <Route path="/customHookUseAPP" element={<CustomHookUseAPP />} />
+        <Route path="/PracticeApp" element={<PracticeApp />} />
+        <Route path="/infiniteScroll" element={<InfiniteScroll />} />
       </Routes>
     </BrowserRouter>
   );

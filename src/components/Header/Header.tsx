@@ -2,22 +2,30 @@ import React from "react";
 
 export const Header = () => {
   return (
-    <div style={{ padding: 20, marginBottom: 30, background: "#00ffcc" }}>
-      <a style={{ paddingRight: 15 }} href="/todo">
-        Todo App
-      </a>
-      <a style={{ paddingRight: 15 }} href="/form">
-        Form App
-      </a>
-      <a style={{ paddingRight: 15 }} href="/formyup">
-        Form App(yup)
-      </a>
-      <a style={{ paddingRight: 15 }} href="/reducerHookUseApp">
-        ReducerHookUseApp
-      </a>
-      <a style={{ paddingRight: 15 }} href="/customHookUseAPP">
-        CustomHookUseAPP
-      </a>
-    </div>
+    <>
+      <div style={{ padding: 20, marginBottom: 5, background: "#00ffcc" }}>
+        <a style={{ paddingRight: 10 }} href="/todo">
+          Todo App
+        </a>
+        <a style={{ paddingRight: 10 }} href="/form">
+          Form App
+        </a>
+        <a style={{ paddingRight: 10 }} href="/formyup">
+          Form App(yup)
+        </a>
+        <a style={{ paddingRight: 10 }} href="/reducerHookUseApp">
+          ReducerHookUseApp
+        </a>
+        <a style={{ paddingRight: 10 }} href="/customHookUseAPP">
+          CustomHookUseAPP
+        </a>
+        <a style={{ paddingRight: 10 }} href="/infiniteScroll">
+          Infinite Scroll
+        </a>
+      </div>
+      <div style={{ padding: 5, marginBottom: 30, background: "#00ffff" }}>
+        <a href="/PracticeApp">Want To practice??</a>
+      </div>
+    </>
   );
 };

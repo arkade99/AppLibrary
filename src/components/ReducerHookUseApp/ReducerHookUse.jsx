@@ -13,6 +13,16 @@ const reducer = (state, action) => {
       return state;
   }
 };
+// const reducer = (state, action) => {
+//Avoiding Switch case
+//   console.log(action.type);
+//   if (action.type === "increment") {
+//     return state + 1;
+//   } else if (action.type === "decrement") {
+//     return state - 1;
+//   }
+//   return state;
+// };
 export const ReducerHookUseApp = () => {
   const [state, despatch] = useReducer(reducer, initialstate);
   return (
