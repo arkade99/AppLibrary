@@ -1,5 +1,3 @@
-import React from "react";
-
 export const Header = () => {
   return (
     <>
@@ -21,6 +19,9 @@ export const Header = () => {
         </a>
         <a style={{ paddingRight: 10 }} href="/infiniteScroll">
           Infinite Scroll
+        </a>
+        <a style={{ paddingRight: 10 }} href="/url-app/add-url">
+          Add-Url
         </a>
       </div>
       <div style={{ padding: 5, marginBottom: 30, background: "#00ffff" }}>
