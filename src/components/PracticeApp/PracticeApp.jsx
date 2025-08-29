@@ -33,6 +33,49 @@ export const PracticeApp = () => {
         Decrement
       </button>
       {/* <InfiniteScroll /> */}
+
+      <CounterWithRef />
+      <CounterWithState />
+    </>
+  );
+};
+
+import { useRef } from "react";
+
+export const CounterWithRef = () => {
+  const countRef = useRef(0);
+
+  const handleClick = () => {
+    countRef.current += 1; // Does NOT cause re-render
+    console.log("Current count:", countRef.current);
+  };
+
+  console.log("Rendered with useRef");
+
+  return (
+    <>
+      <h3>Check console for count</h3>
+      <h3>Count: {countRef.current}</h3>
+      <button onClick={handleClick}>Increment</button>
+    </>
+  );
+};
+
+import { useState } from "react";
+
+export const CounterWithState = () => {
+  const [count, setCount] = useState(0);
+
+  const handleClick = () => {
+    setCount(count + 1); // Causes component to re-render
+  };
+
+  console.log("Rendered with useState");
+
+  return (
+    <>
+      <h3>Count: {count}</h3>
+      <button onClick={handleClick}>Increment</button>
     </>
   );
 };

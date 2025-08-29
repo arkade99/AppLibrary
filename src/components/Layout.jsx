@@ -8,6 +8,7 @@ import { ReducerHookUseApp } from "./ReducerHookUseApp";
 import { CustomHookUseAPP } from "./CustomHookUseAPP";
 import { PracticeApp } from "./PracticeApp";
 import { InfiniteScroll } from "./InfiniteScroll";
+import { Day30Challenges } from "./Day30Challenges";
 
 const Layout = () => {
   return (
@@ -21,6 +22,7 @@ const Layout = () => {
         <Route path="/customHookUseAPP" element={<CustomHookUseAPP />} />
         <Route path="/PracticeApp" element={<PracticeApp />} />
         <Route path="/infiniteScroll" element={<InfiniteScroll />} />
+        <Route path="/day-30-Challenges" element={<Day30Challenges />} />
       </Routes>
     </BrowserRouter>
   );
