@@ -6,6 +6,8 @@ import {
 } from "./CounterApp/CounterApp";
 import "./style.css";
 import { Clock } from "./Clock";
+import { TodoAdd } from "./ToDo/ToDoAdd";
+import ContextApp from "./ContextCounter";
 
 export const TextToDisplay = ({ children }) => {
   const [show, setShow] = useState(false);
@@ -48,7 +50,20 @@ export const Day30Challenges = () => {
           <TextToDisplay>
             <>
               <CounterClassComponentApp />
+              <TodoAdd />
             </>
+          </TextToDisplay>
+        </div>
+        <div className="main-body">
+          <h2>Counter App Using Context</h2>
+          <TextToDisplay>
+            <ContextApp />
+          </TextToDisplay>
+        </div>
+        <div className="main-body">
+          <h2>Add to cart</h2>
+          <TextToDisplay>
+            <ContextApp />
           </TextToDisplay>
         </div>
       </div>
